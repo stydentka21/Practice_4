@@ -1,0 +1,46 @@
+задача 1
+v=int(input('Какая скорость транспортного средства в км/ч?'))
+t=int(input('Сколько часов оно двигалось?'))
+for i in range(1,t+1):
+    s=v*i
+    print(i, ' ', s)
+
+задача 2
+a=int(input('Введите ряд положительных чисел:'))
+s=0
+while a>0:
+  s+= a
+  a=int(input())
+print(s)
+
+задача 3
+a=int(input('Введите неотрицательное целое число: '))
+f=1
+for i in range (1,(a+1)):
+    f=f*i
+print('Факториал числа равен', f)
+
+задача 4
+
+kol=int(input('Стартовое количество: '))
+percent=int(input('Среднесуточное увеличение в %: '))
+days=int(input('Количество дней для размножения: '))
+print('День','    Популяция')
+popul=float
+popul=kol
+print('1','      ', kol)
+for i in range (2,(days+1)):
+    popul=popul+(percent*popul/100)
+    print(i,'      ', popul)
+
+задача 5
+
+space1=0
+while space1<7:
+    print('#', end='')
+    space2=0
+    while space2<space1:
+        print(' ', end='')
+        space2+=1
+    print('#')
+    space1+=1
